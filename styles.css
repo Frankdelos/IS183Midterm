@@ -1,0 +1,185 @@
+* {
+    margin:0px;
+    padding: 0px;
+ }
+ body,
+        html {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        h1 {
+            color: #F4F1BB
+        }
+
+        .main-container-grid {
+            display: grid;
+            grid-template-rows: 1fr 13fr 1fr;
+            height: 100%;
+            grid-row-gap: 1em;
+        }
+
+        /* CSS for header and footer */
+        .r1,
+        .r3 {
+            display: grid;
+            background-color: #9BC1BC;
+            padding: 1em;
+            align-items: center;
+        }
+
+        .r3 {
+            text-align: center;
+            
+        }
+
+        /* CSS for main area */
+        .r2 {
+            height: 100%;
+            background-color: #f1f1f1;
+
+        }
+
+        .three-column {
+            display: grid;
+            grid-template-columns: 2fr 8fr 3fr;
+            background-color: #fff;
+        }
+        .two-column {
+            display: grid;
+            grid-template-columns: 2fr 12fr;
+            background-color: #fff;
+        }
+        .one-column {
+            width: 100%;
+            height: 100%;
+        }
+
+        .c1,
+        .c3 {
+            background-color: #ccc;
+        }
+
+        .txt-center {
+            text-align: center;
+            margin: 15px auto 0px;
+            border-bottom: 1px solid #a8a7a7;
+            padding-bottom: 15px;
+        }
+
+        .left-nav {
+            list-style-type: none;
+        }
+
+        .left-nav>li>a {
+            display: block;
+            padding: 15px 0px 15px 30px;
+            background-color: #ccc;
+            font-weight: bold;
+            text-decoration: none;
+            transition-duration: 0.7s;
+            color:#F4F1BB
+        }
+
+        .left-nav>li>a:hover {
+            background-color: #9BC1BC;
+        }
+
+        .c2 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            /* grid-template-rows: repeat(3, 1fr); */
+            grid-auto-rows: min-content;
+            background-color: #ccc;
+        }
+        .c2-table {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            /* grid-template-rows: repeat(3, 1fr); */
+            grid-auto-rows: min-content;
+            background-color: #ccc;
+            align-self: center;
+            justify-self: center;
+        }
+        .h2-content {
+            grid-column: 1/5;
+            height: 20px;
+            width: 100%;
+        }
+        .c2 > img {
+            width: 100%;
+            align-self: center;
+            justify-self: center;
+            max-height: 120px;
+            max-width: 120px;
+        }
+        .c2 > p {
+            grid-column: 1/5;
+            padding: 15px 30px;
+            color: #F4F1BB
+        }
+        .p-text {
+            color: #E6EBE0
+        }
+        .footer-txt {
+            color: #F4F1BB
+        }
+    /* LOGIN */
+    .container {
+        margin: 50px auto;
+        width: 640px;
+      }
+      .login:before {
+        content: '';
+        position: absolute;
+        top: -8px;
+        right: -8px;
+        bottom: -8px;
+        left: -8px;
+        z-index: -1;
+        background: rgba(0, 0, 0, 0.08);
+        border-radius: 4px;
+      }
+       
+      .login h1 {
+        margin: -20px -20px 21px;
+        line-height: 40px;
+        font-size: 15px;
+        font-weight: bold;
+        color: #555;
+        text-align: center;
+        text-shadow: 0 1px white;
+        background: #f3f3f3;
+        border-bottom: 1px solid #cfcfcf;
+        border-radius: 3px 3px 0 0;
+        background-image: -webkit-linear-gradient(top, whiteffd, #eef2f5);
+        background-image: -moz-linear-gradient(top, whiteffd, #eef2f5);
+        background-image: -o-linear-gradient(top, whiteffd, #eef2f5);
+        background-image: linear-gradient(to bottom, whiteffd, #eef2f5);
+        -webkit-box-shadow: 0 1px whitesmoke;
+        box-shadow: 0 1px whitesmoke;
+      }
+       
+      .login p {
+        margin: 20px 0 0;
+      }
+       
+      .login p:first-child {
+        margin-top: 0;
+      }
+       
+      .login input[type=text], .login input[type=password] {
+        width: 278px;
+      }
+    .products-table {
+        width: 100%;
+        margin-top: 5px;
+    }
+    .content-right {
+        background-color: #ccc;
+    }
